@@ -1,0 +1,46 @@
+{
+    "name": "GameBetMin",
+    "fields": [
+        {
+            "fieldName": "nameHome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nameAway",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "homeLineHome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "homeOddsHome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "homeLineAway",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "homeOddsAway",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "league",
+            "otherEntityName": "league",
+            "otherEntityField": "nameLeague"
+        }
+    ],
+    "changelogDate": "20181015211837",
+    "entityTableName": "game_bet_min",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

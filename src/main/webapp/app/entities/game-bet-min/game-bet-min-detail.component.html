@@ -1,0 +1,53 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="gameBetMin">
+            <h2><span jhiTranslate="twinbetApp.gameBetMin.detail.title">Game Bet Min</span> {{gameBetMin.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="twinbetApp.gameBetMin.nameHome">Name Home</span></dt>
+                <dd>
+                    <span>{{gameBetMin.nameHome}}</span>
+                </dd>
+                <dt><span jhiTranslate="twinbetApp.gameBetMin.nameAway">Name Away</span></dt>
+                <dd>
+                    <span>{{gameBetMin.nameAway}}</span>
+                </dd>
+                <dt><span jhiTranslate="twinbetApp.gameBetMin.homeLineHome">Home Line Home</span></dt>
+                <dd>
+                    <span>{{gameBetMin.homeLineHome}}</span>
+                </dd>
+                <dt><span jhiTranslate="twinbetApp.gameBetMin.homeOddsHome">Home Odds Home</span></dt>
+                <dd>
+                    <span>{{gameBetMin.homeOddsHome}}</span>
+                </dd>
+                <dt><span jhiTranslate="twinbetApp.gameBetMin.homeLineAway">Home Line Away</span></dt>
+                <dd>
+                    <span>{{gameBetMin.homeLineAway}}</span>
+                </dd>
+                <dt><span jhiTranslate="twinbetApp.gameBetMin.homeOddsAway">Home Odds Away</span></dt>
+                <dd>
+                    <span>{{gameBetMin.homeOddsAway}}</span>
+                </dd>
+                <dt><span jhiTranslate="twinbetApp.gameBetMin.league">League</span></dt>
+                <dd>
+                    <div *ngIf="gameBetMin.league">
+                        <a [routerLink]="['/league', gameBetMin.league?.id, 'view']">{{gameBetMin.league?.nameLeague}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/game-bet-min', gameBetMin.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

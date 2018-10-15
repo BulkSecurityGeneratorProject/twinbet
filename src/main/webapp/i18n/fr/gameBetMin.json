@@ -1,0 +1,28 @@
+
+{
+    "twinbetApp": {
+        "gameBetMin" : {
+            "home": {
+                "title": "GameBetMins",
+                "createLabel": "Créer un nouveau Game Bet Min",
+                "createOrEditLabel": "Créer ou éditer un Game Bet Min"
+            },
+            "created": "Un nouveau Game Bet Min a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Game Bet Min avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Game Bet Min avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Game Bet Min {{ id }} ?"
+            },
+            "detail": {
+                "title": "Game Bet Min"
+            },
+            "nameHome": "Name Home",
+            "nameAway": "Name Away",
+            "homeLineHome": "Home Line Home",
+            "homeOddsHome": "Home Odds Home",
+            "homeLineAway": "Home Line Away",
+            "homeOddsAway": "Home Odds Away",
+            "league": "League"
+        }
+    }
+}
