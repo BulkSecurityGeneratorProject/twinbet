@@ -1,10 +1,14 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
+import { TwinbetLeagueModule } from './league/league.module';
+import { TwinbetGameBetMinModule } from './game-bet-min/game-bet-min.module';
 /* jhipster-needle-add-entity-module-import - JHipster will add entity modules imports here */
 
 @NgModule({
     // prettier-ignore
     imports: [
+        TwinbetLeagueModule,
+        TwinbetGameBetMinModule,
         /* jhipster-needle-add-entity-module - JHipster will add entity modules here */
     ],
     declarations: [],

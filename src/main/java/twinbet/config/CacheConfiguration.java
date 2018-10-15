@@ -38,6 +38,8 @@ public class CacheConfiguration {
             cm.createCache(twinbet.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(twinbet.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(twinbet.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(twinbet.domain.League.class.getName(), jcacheConfiguration);
+            cm.createCache(twinbet.domain.GameBetMin.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
