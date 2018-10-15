@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "twinbet",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "5.4.2",
+    "applicationType": "monolith",
+    "baseName": "twinbet",
+    "packageName": "twinbet",
+    "packageFolder": "twinbet",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YzZlMzlkNzhlNTE1YWI0ZDY2MWNhNDhkZWE1ZjliNjNhZTA1YzM3Nzc5OTI5ZGEwYTJiYTFlMjY2OTY5NzNmNGVjOWFiN2I4OTY0ZWI2YTdjNGIyMjdmZGIzNzA5ODE1ODM5NTU4MDFmODg2MmNlMTI0YzQ1YWE2YjI0NGRlMDE=",
+    "clientFramework": "angularX",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "protractor"
+    ],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "fr"
+    ]
+  }
+}
