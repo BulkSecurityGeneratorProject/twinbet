@@ -1,7 +1,7 @@
 {
     "home": {
-        "title": "Bienvenue, Java Hipster !",
-        "subtitle": "Ceci est votre page d'accueil",
+        "title": "Bienvenue sur Twinbet!",
+        "subtitle": "Mettez votre cote mini et recevez une alerte !",
         "logged": {
             "message": "Vous êtes connecté en tant que \"{{username}}\"."
         },
