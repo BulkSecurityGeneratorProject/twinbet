@@ -35,6 +35,8 @@
     "languages": [
       "en",
       "fr"
-    ]
+    ],
+    "herokuAppName": "twinbet",
+    "herokuDeployType": "git"
   }
 }
