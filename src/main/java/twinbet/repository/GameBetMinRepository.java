@@ -18,6 +18,4 @@ import org.springframework.stereotype.Repository;
 public interface GameBetMinRepository extends JpaRepository<GameBetMin, Long> {
 
 	Page<GameBetMin> findByLeagueUserLogin(String orElse, Pageable pageable);
-
-
 }

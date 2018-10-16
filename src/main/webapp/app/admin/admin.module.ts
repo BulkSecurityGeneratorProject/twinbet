@@ -7,6 +7,7 @@ import { TwinbetSharedModule } from 'app/shared';
 
 import {
     adminState,
+    RegisterComponent,
     AuditsComponent,
     UserMgmtComponent,
     UserMgmtDetailComponent,
@@ -29,6 +30,7 @@ import {
     ],
     declarations: [
         AuditsComponent,
+        RegisterComponent,
         UserMgmtComponent,
         UserMgmtDetailComponent,
         UserMgmtUpdateComponent,
