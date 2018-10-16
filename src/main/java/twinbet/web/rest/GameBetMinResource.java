@@ -3,6 +3,7 @@ package twinbet.web.rest;
 import com.codahale.metrics.annotation.Timed;
 import twinbet.domain.GameBetMin;
 import twinbet.repository.GameBetMinRepository;
+import twinbet.security.SecurityUtils;
 import twinbet.web.rest.errors.BadRequestAlertException;
 import twinbet.web.rest.util.HeaderUtil;
 import twinbet.web.rest.util.PaginationUtil;
@@ -91,7 +92,7 @@ public class GameBetMinResource {
     @Timed
     public ResponseEntity<List<GameBetMin>> getAllGameBetMins(Pageable pageable) {
         log.debug("REST request to get a page of GameBetMins");
-        Page<GameBetMin> page = gameBetMinRepository.findAll(pageable);
+        Page<GameBetMin> page = gameBetMinRepository.findByLeagueUserLogin(SecurityUtils.getCurrentUserLogin().orElse(null),pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/game-bet-mins");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
