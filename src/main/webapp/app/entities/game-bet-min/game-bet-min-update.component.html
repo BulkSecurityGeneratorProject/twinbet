@@ -43,8 +43,7 @@
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="twinbetApp.gameBetMin.league" for="field_league">League</label>
                     <select class="form-control" id="field_league" name="league" [(ngModel)]="gameBetMin.league" >
-                        <option [ngValue]="null"></option>
-                        <option [ngValue]="leagueOption.id === gameBetMin.league?.id ? gameBetMin.league : leagueOption" *ngFor="let leagueOption of leagues; trackBy: trackLeagueById">{{leagueOption.nameLeague}}</option>
+                        <option [ngValue]="leagueOption.id === gameBetMin.league?.id ? gameBetMin.league : leagueOption" *ngFor="let leagueOption of leagues trackBy: trackLeagueById">{{leagueOption.nameLeague}}</option>
                     </select>
                 </div>
             </div>

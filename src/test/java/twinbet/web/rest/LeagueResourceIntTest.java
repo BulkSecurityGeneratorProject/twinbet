@@ -4,6 +4,7 @@ import twinbet.TwinbetApp;
 
 import twinbet.domain.League;
 import twinbet.repository.LeagueRepository;
+import twinbet.repository.UserRepository;
 import twinbet.web.rest.errors.ExceptionTranslator;
 
 import org.junit.Before;
@@ -44,6 +45,9 @@ public class LeagueResourceIntTest {
 
     @Autowired
     private LeagueRepository leagueRepository;
+    
+    @Autowired
+    private UserRepository userRepository;
 
     @Autowired
     private MappingJackson2HttpMessageConverter jacksonMessageConverter;
@@ -64,7 +68,7 @@ public class LeagueResourceIntTest {
     @Before
     public void setup() {
         MockitoAnnotations.initMocks(this);
-        final LeagueResource leagueResource = new LeagueResource(leagueRepository);
+        final LeagueResource leagueResource = new LeagueResource(leagueRepository,userRepository);
         this.restLeagueMockMvc = MockMvcBuilders.standaloneSetup(leagueResource)
             .setCustomArgumentResolvers(pageableArgumentResolver)
             .setControllerAdvice(exceptionTranslator)

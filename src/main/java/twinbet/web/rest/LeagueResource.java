@@ -1,19 +1,25 @@
 package twinbet.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
-import twinbet.domain.League;
+import twinbet.domain.League;import twinbet.domain.User;
 import twinbet.repository.LeagueRepository;
+import twinbet.repository.UserRepository;
+import twinbet.security.SecurityUtils;
 import twinbet.web.rest.errors.BadRequestAlertException;
 import twinbet.web.rest.util.HeaderUtil;
 import io.github.jhipster.web.util.ResponseUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-
+import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
 
@@ -29,9 +35,11 @@ public class LeagueResource {
     private static final String ENTITY_NAME = "league";
 
     private final LeagueRepository leagueRepository;
-
-    public LeagueResource(LeagueRepository leagueRepository) {
+    private final UserRepository userRepository;
+    
+    public LeagueResource(LeagueRepository leagueRepository, UserRepository userRepository) {
         this.leagueRepository = leagueRepository;
+        this.userRepository = userRepository;
     }
 
     /**
@@ -44,6 +52,7 @@ public class LeagueResource {
     @PostMapping("/leagues")
     @Timed
     public ResponseEntity<League> createLeague(@RequestBody League league) throws URISyntaxException {
+    	league.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin().get()).get());
         log.debug("REST request to save League : {}", league);
         if (league.getId() != null) {
             throw new BadRequestAlertException("A new league cannot already have an ID", ENTITY_NAME, "idexists");

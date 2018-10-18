@@ -70,6 +70,6 @@ export class GameBetMinUpdateComponent implements OnInit {
     }
 
     trackLeagueById(index: number, item: ILeague) {
-        return item.id;
+        return item.nameLeague;
     }
 }
