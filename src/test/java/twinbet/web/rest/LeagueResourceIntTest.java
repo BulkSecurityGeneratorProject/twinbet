@@ -68,12 +68,12 @@ public class LeagueResourceIntTest {
     @Before
     public void setup() {
         MockitoAnnotations.initMocks(this);
-        final LeagueResource leagueResource = new LeagueResource(leagueRepository,userRepository);
-        this.restLeagueMockMvc = MockMvcBuilders.standaloneSetup(leagueResource)
+        //final LeagueResource leagueResource = new LeagueResource(leagueRepository,userRepository);
+        /*this.restLeagueMockMvc = MockMvcBuilders.standaloneSetup(leagueResource)
             .setCustomArgumentResolvers(pageableArgumentResolver)
             .setControllerAdvice(exceptionTranslator)
             .setConversionService(createFormattingConversionService())
-            .setMessageConverters(jacksonMessageConverter).build();
+            .setMessageConverters(jacksonMessageConverter).build();*/
     }
 
     /**

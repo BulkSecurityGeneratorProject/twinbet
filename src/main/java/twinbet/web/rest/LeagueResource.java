@@ -1,27 +1,35 @@
 package twinbet.web.rest;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.codahale.metrics.annotation.Timed;
-import twinbet.domain.League;import twinbet.domain.User;
+
+import io.github.jhipster.web.util.ResponseUtil;
+import twinbet.domain.League;
 import twinbet.repository.LeagueRepository;
 import twinbet.repository.UserRepository;
 import twinbet.security.SecurityUtils;
 import twinbet.web.rest.errors.BadRequestAlertException;
 import twinbet.web.rest.util.HeaderUtil;
-import io.github.jhipster.web.util.ResponseUtil;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.time.Instant;
-import java.util.List;
-import java.util.Optional;
 
 /**
  * REST controller for managing League.
@@ -33,13 +41,28 @@ public class LeagueResource {
     private final Logger log = LoggerFactory.getLogger(LeagueResource.class);
 
     private static final String ENTITY_NAME = "league";
+    public final List<League> myListofLeagues = new ArrayList<League>();
 
     private final LeagueRepository leagueRepository;
     private final UserRepository userRepository;
     
-    public LeagueResource(LeagueRepository leagueRepository, UserRepository userRepository) {
+    public LeagueResource(LeagueRepository leagueRepository, UserRepository userRepository) throws IOException {
         this.leagueRepository = leagueRepository;
         this.userRepository = userRepository;
+        getListAllLeague();
+    }
+    
+    public void getListAllLeague() throws IOException
+    {
+    	System.out.println(System.getProperty("user.dir"));
+    	BufferedReader br = new BufferedReader(new FileReader("conffile/leagues.txt"));
+    	String line;
+    	while ((line = br.readLine()) != null) {
+    		League l = new League();
+    		l.setNameLeague(line);
+    		myListofLeagues.add(l);
+    	}
+    	br.close();
     }
 
     /**
@@ -86,7 +109,7 @@ public class LeagueResource {
     }
 
     /**
-     * GET  /leagues : get all the leagues.
+     * GET  /leagues : get all the leagues by User.
      *
      * @return the ResponseEntity with status 200 (OK) and the list of leagues in body
      */
@@ -94,7 +117,21 @@ public class LeagueResource {
     @Timed
     public List<League> getAllLeagues() {
         log.debug("REST request to get all Leagues");
+        
         return leagueRepository.findByUserIsCurrentUser();
+    }
+    
+    /**
+     * GET  /leaguesAll : get all the leagues.
+     *
+     * @return the ResponseEntity with status 200 (OK) and the list of leagues in body
+     */
+    @GetMapping("/leagueAll")
+    @Timed
+    public List<League> getAllLeaguesAll() {
+    
+        log.debug("REST request to get all Leagues AL");
+        return this.myListofLeagues;
     }
 
     /**

@@ -1,0 +1,380 @@
+Afc Champions League
+Afc Champions League - Specials [1:home] Over/under
+Afc Champions League - Specials [2:away] Over/under
+Afc Champions League - Specials No.of Corners
+Afc Champions League - Specials To Kick Off
+Afc Champions League - Specials To Qualify
+Afc Cup
+Algeria 1st Division
+Algeria Youth U21 League
+Argentina Cup
+Argentina Nacional B Division
+Argentina Primera B Metropolitana
+Argentina Primera C
+Argentina Primera D
+Argentina Reserve League
+Argentina Super Liga
+Argentina Super Liga - Specials [1:home] Over/under
+Argentina Super Liga - Specials [2:away] Over/under
+Australia A-league
+Australia Ffa Cup
+Australia Ffa Cup - Specials [1:home] Over/under
+Australia Ffa Cup - Specials [2:away] Over/under
+Austria 2nd League
+Austria Bundesliga
+Austria Bundesliga - Specials [1:home] Over/under
+Austria Bundesliga - Specials [2:away] Over/under
+Austria Regional League East
+Azerbaijan Premier League
+Bahrain Premier League
+Bahrain Premier League - Specials No.of Corners
+Bangabandhu Gold Cup (in Bangladesh)
+Belarus Premier League
+Belgium First Division A
+Belgium First Division A - Specials [1:home] Over/under
+Belgium First Division A - Specials [2:away] Over/under
+Belgium First Division A - Specials No.of Corners
+Belgium First Division B
+Belgium Reserve League
+Bolivia Professional Football League
+Brazil Campeonato Aspirantes U23
+Brazil Campeonato Paulista Women
+Brazil Copa Paulista
+Brazil Cup
+Brazil Cup - Specials [1:home] Over/under
+Brazil Cup - Specials [2:away] Over/under
+Brazil Gaucho Cup
+Brazil Serie A
+Brazil Serie A - Specials [1:home] Over/under
+Brazil Serie A - Specials [2:away] Over/under
+Brazil Serie A - Specials Home Away
+Brazil Serie A - Specials No.of Corners
+Brazil Serie B
+Brazil Serie B - Specials [1:home] Over/under
+Brazil Serie B - Specials [2:away] Over/under
+Bulgaria First Professional League
+Bulgaria Second Professional League
+Caf Champions League
+Caf Champions League - Specials No.of Corners
+Chile Primera Division
+Chile Primera Division - Specials [1:home] Over/under
+Chile Primera Division - Specials [2:away] Over/under
+China Football Super League
+China Football Super League - Specials [1:home] Over/under
+China Football Super League - Specials [2:away] Over/under
+China Football Super League - Specials Home Away
+China Football Super League - Specials No.of Corners
+Club Friendly
+Colombia Cup
+Colombia Primera A
+Colombia Primera B
+Concacaf Women Championship 2018 (in Usa)
+Copa Libertadores
+Copa Libertadores - Specials [1:home] Over/under
+Copa Libertadores - Specials [2:away] Over/under
+Copa Sudamericana
+Copa Sudamericana - Specials [1:home] Over/under
+Copa Sudamericana - Specials [2:away] Over/under
+Croatia 1st Division
+Croatia 2nd Division
+Croatia U19 Division
+Cyprus 2nd Division
+Czech Republic 1st Division
+Czech Republic 1st Division - Specials [1:home] Over/under
+Czech Republic 1st Division - Specials [2:away] Over/under
+Czech Republic National Football League
+Denmark 1st Division
+Denmark 1st Division - Specials [1:home] Over/under
+Denmark 1st Division - Specials [2:away] Over/under
+Denmark 2nd Division
+Denmark Reserve League
+Denmark Series
+Denmark Super League
+Denmark Super League - Specials [1:home] Over/under
+Denmark Super League - Specials [2:away] Over/under
+Denmark Super League - Specials No.of Corners
+Denmark U17 League
+Denmark U21 Tournament
+Ecuador Serie A
+Egypt Cup
+Egypt Premier League
+Egypt Premier League - Specials No.of Corners
+English Fa Cup Qualifiers
+English Football League Trophy
+English Isthmian League Cup
+English Isthmian League Premier Division
+English League Championship
+English League Championship - Specials [1:home] Over/under
+English League Championship - Specials [2:away] Over/under
+English League Championship - Specials Home Away
+English League Championship - Specials No.of Corners
+English League Championship - Specials To Kick Off
+English League Cup
+English League Cup - Specials [1:home] Over/under
+English League Cup - Specials [2:away] Over/under
+English League One
+English League One - Specials [1:home] Over/under
+English League One - Specials [2:away] Over/under
+English League One - Specials No.of Corners
+English League Two
+English League Two - Specials [1:home] Over/under
+English League Two - Specials [2:away] Over/under
+English League Two - Specials No.of Corners
+English National League
+English National League - Specials [1:home] Over/under
+English National League - Specials [2:away] Over/under
+English National League North
+English Northern Division One West
+English Northern Premier Division
+English Premier League
+English Premier League - Specials [1:home] Over/under
+English Premier League - Specials [2:away] Over/under
+English Premier League - Specials Booking
+English Premier League - Specials No.of Corners
+English Premier League - Specials To Kick Off
+English Southern League Challenge Cup
+English U23 Premier League Cup
+Estonia Meistriliiga
+Estonia Meistriliiga - Specials No.of Corners
+Fifa Womens World Cup 2019 Europe Qualifiers (play Off)
+Finland Veikkausliiga
+Finland Veikkausliiga - Specials [1:home] Over/under
+Finland Veikkausliiga - Specials [2:away] Over/under
+Finland Ykkonen
+Finland Ykkonen - Specials [1:home] Over/under
+Finland Ykkonen - Specials [2:away] Over/under
+France Ligue 1
+France Ligue 1 - Specials [1:home] Over/under
+France Ligue 1 - Specials [2:away] Over/under
+France Ligue 1 - Specials No.of Corners
+France Ligue 1 - Specials To Kick Off
+France Ligue 2
+France Ligue 2 - Specials [1:home] Over/under
+France Ligue 2 - Specials [2:away] Over/under
+France Ligue 2 - Specials No.of Corners
+France National
+Georgia Erovnuli Liga
+Germany 3rd Liga
+Germany 3rd Liga - Specials [1:home] Over/under
+Germany 3rd Liga - Specials [2:away] Over/under
+Germany Bundesliga 2
+Germany Bundesliga 2 - Specials [1:home] Over/under
+Germany Bundesliga 2 - Specials [2:away] Over/under
+Germany Bundesliga 2 - Specials Home Away
+Germany Bundesliga 2 - Specials No.of Corners
+Germany Bundesliga 2 - Specials To Kick Off
+Germany Oberliga
+Germany Regional League Bavaria
+Germany Regional League North
+Germany Regional League Northeast
+Germany Regional League Northeast - Specials No.of Corners
+Germany Regional League Southwest
+Germany Regional League West
+Germany-bundesliga I
+Germany-bundesliga I - Specials [1:home] Over/under
+Germany-bundesliga I - Specials [2:away] Over/under
+Germany-bundesliga I - Specials Booking
+Germany-bundesliga I - Specials No.of Corners
+Germany-bundesliga I - Specials To Kick Off
+Gibraltar Premier Division
+Gibraltar Premier Division - Specials No.of Corners
+Greece Super League
+Greece Super League - Specials [1:home] Over/under
+Greece Super League - Specials [2:away] Over/under
+Greece Super League - Specials No.of Corners
+Holland Eerste Divisie
+Holland Eredivisie
+Holland Eredivisie - Specials [1:home] Over/under
+Holland Eredivisie - Specials [2:away] Over/under
+Holland Eredivisie - Specials No.of Corners
+Holland Reserve League
+Hong Kong Premier League
+Hungary Nb I
+India Super League
+Indonesia Liga 1
+International Friendly
+International Friendly - Specials [1:home] Over/under
+International Friendly - Specials [2:away] Over/under
+International Friendly - Specials To Kick Off
+International Friendly Women
+Ireland 1st Division (play Off)
+Ireland 1st Division (play Off) - Specials [1:home] Over/under
+Ireland 1st Division (play Off) - Specials [2:away] Over/under
+Ireland Fai Cup
+Ireland Fai Cup - Specials [1:home] Over/under
+Ireland Fai Cup - Specials [2:away] Over/under
+Ireland Fai Cup - Specials No.of Corners
+Ireland Fai Cup - Specials To Qualify
+Ireland Premier Division
+Ireland Premier Division - Specials [1:home] Over/under
+Ireland Premier Division - Specials [2:away] Over/under
+Israel Leumit League
+Israel Liga Alef
+Israel Liga Bet
+Israel Premier League
+Italy Campionato Primavera 1 U19
+Italy Serie A
+Italy Serie A - Specials [1:home] Over/under
+Italy Serie A - Specials [2:away] Over/under
+Italy Serie A - Specials Booking
+Italy Serie A - Specials No.of Corners
+Italy Serie A - Specials To Kick Off
+Italy Serie B
+Italy Serie B - Specials [1:home] Over/under
+Italy Serie B - Specials [2:away] Over/under
+Italy Serie B - Specials No.of Corners
+Italy Serie C
+Italy Serie C Cup
+Jamaica Premier League
+Japan J-league Division 1
+Japan J-league Division 1 - Specials [1:home] Over/under
+Japan J-league Division 1 - Specials [2:away] Over/under
+Japan J-league Division 2
+Japan J-league Division 2 - Specials [1:home] Over/under
+Japan J-league Division 2 - Specials [2:away] Over/under
+Japan League Cup
+Japan League Cup - Specials [1:home] Over/under
+Japan League Cup - Specials [2:away] Over/under
+Jordan Pro League
+Kazakhstan 1st Division
+Korea Fa Cup
+Korea Fa Cup - Specials [1:home] Over/under
+Korea Fa Cup - Specials [2:away] Over/under
+Korea K League 1
+Korea K League 1 - Specials [1:home] Over/under
+Korea K League 1 - Specials [2:away] Over/under
+Lithuania A Lyga
+Malta Premier League
+Mexico Cup
+Mexico Cup - Specials [1:home] Over/under
+Mexico Cup - Specials [2:away] Over/under
+Mexico Liga De Ascenso
+Mexico Primera Division
+Mexico Primera Division - Specials No.of Corners
+Mexico U20 League
+Northern Ireland Premiership
+Northern Ireland Premiership - Specials No.of Corners
+Norway 1st Division
+Norway 1st Division - Specials [1:home] Over/under
+Norway 1st Division - Specials [2:away] Over/under
+Norway 1st Division - Specials No.of Corners
+Norway 3rd Division
+Norway Eliteserien
+Norway Eliteserien - Specials [1:home] Over/under
+Norway Eliteserien - Specials [2:away] Over/under
+Paraguay Cup
+Paraguay Primera Division
+Peru Torneo Descentralizado
+Poland 1st Division
+Poland 3rd Division
+Poland Ekstraklasa
+Poland Ekstraklasa - Specials [1:home] Over/under
+Poland Ekstraklasa - Specials [2:away] Over/under
+Poland Ekstraklasa - Specials No.of Corners
+Portugal Campeonato Nacional U19 Division 1
+Portugal Liga Pro
+Portugal Liga Revelacao U23
+Portugal Super Liga
+Portugal Super Liga - Specials [1:home] Over/under
+Portugal Super Liga - Specials [2:away] Over/under
+Portugal Super Liga - Specials Home Away
+Portugal Super Liga - Specials No.of Corners
+Qatar League U23
+Qatar Stars League
+Romania 2nd Division
+Romania 3rd Division
+Romania Liga I
+Romania Liga I - Specials [1:home] Over/under
+Romania Liga I - Specials [2:away] Over/under
+Russia 2nd Division
+Russia Premier League
+Russia Premier League - Specials [1:home] Over/under
+Russia Premier League - Specials [2:away] Over/under
+Russia Premier League - Specials No.of Corners
+Russia U21 Championship
+Saudi 1st Division
+Saudi Pro League
+Scotland Challenge Cup
+Scotland Championship
+Scotland Highland Football League
+Scotland League 1
+Scotland League 2
+Scotland Premiership
+Scotland Premiership - Specials [1:home] Over/under
+Scotland Premiership - Specials [2:away] Over/under
+Scotland Reserve League 2
+Serbia First League
+Serbia Super League
+Singapore S-league
+Slovakia 2nd Division
+Slovenia Prva Liga
+South Africa Premiership
+Spain Primera Laliga
+Spain Primera Laliga - Specials [1:home] Over/under
+Spain Primera Laliga - Specials [2:away] Over/under
+Spain Primera Laliga - Specials Booking
+Spain Primera Laliga - Specials No.of Corners
+Spain Primera Laliga - Specials To Kick Off
+Spain Segunda Division
+Spain Segunda Division - Specials [1:home] Over/under
+Spain Segunda Division - Specials [2:away] Over/under
+Spain Segunda Division - Specials Home Away
+Spain Segunda Division - Specials No.of Corners
+Spain Tercera Division
+Sweden 2nd Division
+Sweden Allsvenskan
+Sweden Allsvenskan - Specials [1:home] Over/under
+Sweden Allsvenskan - Specials [2:away] Over/under
+Sweden Allsvenskan - Specials No.of Corners
+Sweden Allsvenskan U21
+Sweden Superettan
+Sweden Superettan - Specials [1:home] Over/under
+Sweden Superettan - Specials [2:away] Over/under
+Sweden Superettan - Specials No.of Corners
+Sweden Superettan U21
+Switzerland Challenge League
+Switzerland Challenge League - Specials [1:home] Over/under
+Switzerland Challenge League - Specials [2:away] Over/under
+Switzerland Super League
+Switzerland Super League - Specials [1:home] Over/under
+Switzerland Super League - Specials [2:away] Over/under
+Tunisia League 2
+Turkey First League
+Turkey Super League
+Turkey Super League - Specials [1:home] Over/under
+Turkey Super League - Specials [2:away] Over/under
+Turkey Super League - Specials No.of Corners
+Uae Arabia Gulf League
+Uefa Champions League
+Uefa Champions League - Specials [1:home] Over/under
+Uefa Champions League - Specials [2:away] Over/under
+Uefa Champions League - Specials Booking
+Uefa Champions League - Specials Home Away
+Uefa Champions League - Specials Injury Time Awarded At End Of 2nd Half
+Uefa Champions League - Specials No.of Corners
+Uefa Champions League - Specials To Kick Off
+Uefa Champions League - Specials Total Goals Minutes
+Uefa Europa League
+Uefa Europa League - Specials [1:home] Over/under
+Uefa Europa League - Specials [2:away] Over/under
+Uefa Europa League - Specials To Kick Off
+Uefa Nations League A
+Uefa Nations League A - Specials To Kick Off
+Uefa Nations League B
+Uefa Nations League B - Specials To Kick Off
+Uefa Nations League C
+Uefa Nations League C - Specials To Kick Off
+Uefa Nations League D
+Uefa Nations League D - Specials To Kick Off
+Uefa Women U19 Championship 2019 Qualifiers
+Uefa Youth League
+United Soccer League
+Usa Major League Soccer
+Usa Major League Soccer - Specials [1:home] Over/under
+Usa Major League Soccer - Specials [2:away] Over/under
+Usa Major League Soccer - Specials No.of Corners
+Uzbekistan Pro League A
+Uzbekistan Super League (play Off)
+Venezuela Primera Division
+Venezuela Segunda Division
+Wales Premier League

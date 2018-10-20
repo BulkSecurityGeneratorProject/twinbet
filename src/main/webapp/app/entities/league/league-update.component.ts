@@ -17,6 +17,7 @@ export class LeagueUpdateComponent implements OnInit {
     isSaving: boolean;
 
     users: IUser[];
+    leagues: ILeague[];
 
     constructor(
         private jhiAlertService: JhiAlertService,
@@ -33,6 +34,12 @@ export class LeagueUpdateComponent implements OnInit {
         this.userService.query().subscribe(
             (res: HttpResponse<IUser[]>) => {
                 this.users = res.body;
+            },
+            (res: HttpErrorResponse) => this.onError(res.message)
+        );
+        this.leagueService.queryAll().subscribe(
+            (res: HttpResponse<ILeague[]>) => {
+                this.leagues = res.body;
             },
             (res: HttpErrorResponse) => this.onError(res.message)
         );

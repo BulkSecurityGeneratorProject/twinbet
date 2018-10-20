@@ -9,12 +9,17 @@
                     <input type="text" class="form-control" id="id" name="id"
                         [(ngModel)]="league.id" readonly />
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label class="form-control-label" jhiTranslate="twinbetApp.league.nameLeague" for="field_nameLeague">Name League</label>
                     <input type="text" class="form-control" name="nameLeague" id="field_nameLeague"
                         [(ngModel)]="league.nameLeague" />
+                </div> -->
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="twinbetApp.league.nameLeague" for="field_nameLeague">League</label>
+                    <select class="form-control" id="field_league" name="league" [(ngModel)]="league.nameLeague" >
+                        <option *ngFor="let leagueOption of leagues trackBy: trackLeagueById">{{leagueOption.nameLeague}}</option>
+                    </select>
                 </div>
-
                <!-- <div class="form-group">
                     <label class="form-control-label" jhiTranslate="twinbetApp.league.user" for="field_user">User</label>
                     <select class="form-control" id="field_user" name="user" [(ngModel)]="league.user" >
