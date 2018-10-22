@@ -21,7 +21,7 @@ describe('Service Tests', () => {
             service = injector.get(GameBetMinService);
             httpMock = injector.get(HttpTestingController);
 
-            elemDefault = new GameBetMin(0, 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA', 'AAAAAAA');
+            elemDefault = null;
         });
 
         describe('Service methods', async () => {

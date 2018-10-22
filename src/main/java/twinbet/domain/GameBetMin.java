@@ -30,16 +30,16 @@ public class GameBetMin implements Serializable {
     private String nameAway;
 
     @Column(name = "home_line_home")
-    private String homeLineHome;
+    private Double homeLineHome;
 
     @Column(name = "home_odds_home")
-    private String homeOddsHome;
+    private Double homeOddsHome;
 
     @Column(name = "home_line_away")
-    private String homeLineAway;
+    private Double homeLineAway;
 
     @Column(name = "home_odds_away")
-    private String homeOddsAway;
+    private Double homeOddsAway;
 
     @ManyToOne
     @JsonIgnoreProperties("")
@@ -80,55 +80,55 @@ public class GameBetMin implements Serializable {
         this.nameAway = nameAway;
     }
 
-    public String getHomeLineHome() {
+    public Double getHomeLineHome() {
         return homeLineHome;
     }
 
-    public GameBetMin homeLineHome(String homeLineHome) {
+    public GameBetMin homeLineHome(Double homeLineHome) {
         this.homeLineHome = homeLineHome;
         return this;
     }
 
-    public void setHomeLineHome(String homeLineHome) {
+    public void setHomeLineHome(Double homeLineHome) {
         this.homeLineHome = homeLineHome;
     }
 
-    public String getHomeOddsHome() {
+    public Double getHomeOddsHome() {
         return homeOddsHome;
     }
 
-    public GameBetMin homeOddsHome(String homeOddsHome) {
+    public GameBetMin homeOddsHome(Double homeOddsHome) {
         this.homeOddsHome = homeOddsHome;
         return this;
     }
 
-    public void setHomeOddsHome(String homeOddsHome) {
+    public void setHomeOddsHome(Double homeOddsHome) {
         this.homeOddsHome = homeOddsHome;
     }
 
-    public String getHomeLineAway() {
+    public Double getHomeLineAway() {
         return homeLineAway;
     }
 
-    public GameBetMin homeLineAway(String homeLineAway) {
+    public GameBetMin homeLineAway(Double homeLineAway) {
         this.homeLineAway = homeLineAway;
         return this;
     }
 
-    public void setHomeLineAway(String homeLineAway) {
+    public void setHomeLineAway(Double homeLineAway) {
         this.homeLineAway = homeLineAway;
     }
 
-    public String getHomeOddsAway() {
+    public Double getHomeOddsAway() {
         return homeOddsAway;
     }
 
-    public GameBetMin homeOddsAway(String homeOddsAway) {
+    public GameBetMin homeOddsAway(Double homeOddsAway) {
         this.homeOddsAway = homeOddsAway;
         return this;
     }
 
-    public void setHomeOddsAway(String homeOddsAway) {
+    public void setHomeOddsAway(Double homeOddsAway) {
         this.homeOddsAway = homeOddsAway;
     }
 
@@ -172,10 +172,10 @@ public class GameBetMin implements Serializable {
             "id=" + getId() +
             ", nameHome='" + getNameHome() + "'" +
             ", nameAway='" + getNameAway() + "'" +
-            ", homeLineHome='" + getHomeLineHome() + "'" +
-            ", homeOddsHome='" + getHomeOddsHome() + "'" +
-            ", homeLineAway='" + getHomeLineAway() + "'" +
-            ", homeOddsAway='" + getHomeOddsAway() + "'" +
+            ", homeLineHome=" + getHomeLineHome() +
+            ", homeOddsHome=" + getHomeOddsHome() +
+            ", homeLineAway=" + getHomeLineAway() +
+            ", homeOddsAway=" + getHomeOddsAway() +
             "}";
     }
 }

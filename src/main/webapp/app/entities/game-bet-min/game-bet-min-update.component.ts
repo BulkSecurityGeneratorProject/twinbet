@@ -45,6 +45,9 @@ export class GameBetMinUpdateComponent implements OnInit {
 
     save() {
         this.isSaving = true;
+        if (this.gameBetMin.homeLineAway === null || this.gameBetMin.homeLineAway === undefined) {
+            this.gameBetMin.homeLineAway = -this.gameBetMin.homeLineHome;
+        }
         if (this.gameBetMin.id !== undefined) {
             this.subscribeToSaveResponse(this.gameBetMinService.update(this.gameBetMin));
         } else {

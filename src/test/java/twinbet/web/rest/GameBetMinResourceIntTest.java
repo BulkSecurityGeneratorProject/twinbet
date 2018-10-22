@@ -45,17 +45,17 @@ public class GameBetMinResourceIntTest {
     private static final String DEFAULT_NAME_AWAY = "AAAAAAAAAA";
     private static final String UPDATED_NAME_AWAY = "BBBBBBBBBB";
 
-    private static final String DEFAULT_HOME_LINE_HOME = "AAAAAAAAAA";
-    private static final String UPDATED_HOME_LINE_HOME = "BBBBBBBBBB";
+    private static final Double DEFAULT_HOME_LINE_HOME = 1D;
+    private static final Double UPDATED_HOME_LINE_HOME = 2D;
 
-    private static final String DEFAULT_HOME_ODDS_HOME = "AAAAAAAAAA";
-    private static final String UPDATED_HOME_ODDS_HOME = "BBBBBBBBBB";
+    private static final Double DEFAULT_HOME_ODDS_HOME = 1D;
+    private static final Double UPDATED_HOME_ODDS_HOME = 2D;
 
-    private static final String DEFAULT_HOME_LINE_AWAY = "AAAAAAAAAA";
-    private static final String UPDATED_HOME_LINE_AWAY = "BBBBBBBBBB";
+    private static final Double DEFAULT_HOME_LINE_AWAY = 1D;
+    private static final Double UPDATED_HOME_LINE_AWAY = 2D;
 
-    private static final String DEFAULT_HOME_ODDS_AWAY = "AAAAAAAAAA";
-    private static final String UPDATED_HOME_ODDS_AWAY = "BBBBBBBBBB";
+    private static final Double DEFAULT_HOME_ODDS_AWAY = 1D;
+    private static final Double UPDATED_HOME_ODDS_AWAY = 2D;
 
     @Autowired
     private GameBetMinRepository gameBetMinRepository;
@@ -164,10 +164,10 @@ public class GameBetMinResourceIntTest {
             .andExpect(jsonPath("$.[*].id").value(hasItem(gameBetMin.getId().intValue())))
             .andExpect(jsonPath("$.[*].nameHome").value(hasItem(DEFAULT_NAME_HOME.toString())))
             .andExpect(jsonPath("$.[*].nameAway").value(hasItem(DEFAULT_NAME_AWAY.toString())))
-            .andExpect(jsonPath("$.[*].homeLineHome").value(hasItem(DEFAULT_HOME_LINE_HOME.toString())))
-            .andExpect(jsonPath("$.[*].homeOddsHome").value(hasItem(DEFAULT_HOME_ODDS_HOME.toString())))
-            .andExpect(jsonPath("$.[*].homeLineAway").value(hasItem(DEFAULT_HOME_LINE_AWAY.toString())))
-            .andExpect(jsonPath("$.[*].homeOddsAway").value(hasItem(DEFAULT_HOME_ODDS_AWAY.toString())));
+            .andExpect(jsonPath("$.[*].homeLineHome").value(hasItem(DEFAULT_HOME_LINE_HOME.doubleValue())))
+            .andExpect(jsonPath("$.[*].homeOddsHome").value(hasItem(DEFAULT_HOME_ODDS_HOME.doubleValue())))
+            .andExpect(jsonPath("$.[*].homeLineAway").value(hasItem(DEFAULT_HOME_LINE_AWAY.doubleValue())))
+            .andExpect(jsonPath("$.[*].homeOddsAway").value(hasItem(DEFAULT_HOME_ODDS_AWAY.doubleValue())));
     }
     
     @Test
@@ -183,10 +183,10 @@ public class GameBetMinResourceIntTest {
             .andExpect(jsonPath("$.id").value(gameBetMin.getId().intValue()))
             .andExpect(jsonPath("$.nameHome").value(DEFAULT_NAME_HOME.toString()))
             .andExpect(jsonPath("$.nameAway").value(DEFAULT_NAME_AWAY.toString()))
-            .andExpect(jsonPath("$.homeLineHome").value(DEFAULT_HOME_LINE_HOME.toString()))
-            .andExpect(jsonPath("$.homeOddsHome").value(DEFAULT_HOME_ODDS_HOME.toString()))
-            .andExpect(jsonPath("$.homeLineAway").value(DEFAULT_HOME_LINE_AWAY.toString()))
-            .andExpect(jsonPath("$.homeOddsAway").value(DEFAULT_HOME_ODDS_AWAY.toString()));
+            .andExpect(jsonPath("$.homeLineHome").value(DEFAULT_HOME_LINE_HOME.doubleValue()))
+            .andExpect(jsonPath("$.homeOddsHome").value(DEFAULT_HOME_ODDS_HOME.doubleValue()))
+            .andExpect(jsonPath("$.homeLineAway").value(DEFAULT_HOME_LINE_AWAY.doubleValue()))
+            .andExpect(jsonPath("$.homeOddsAway").value(DEFAULT_HOME_ODDS_AWAY.doubleValue()));
     }
 
     @Test

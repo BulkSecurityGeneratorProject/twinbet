@@ -4,10 +4,10 @@ export interface IGameBetMin {
     id?: number;
     nameHome?: string;
     nameAway?: string;
-    homeLineHome?: string;
-    homeOddsHome?: string;
-    homeLineAway?: string;
-    homeOddsAway?: string;
+    homeLineHome?: number;
+    homeOddsHome?: number;
+    homeLineAway?: number;
+    homeOddsAway?: number;
     league?: ILeague;
 }
 
@@ -16,10 +16,10 @@ export class GameBetMin implements IGameBetMin {
         public id?: number,
         public nameHome?: string,
         public nameAway?: string,
-        public homeLineHome?: string,
-        public homeOddsHome?: string,
-        public homeLineAway?: string,
-        public homeOddsAway?: string,
+        public homeLineHome?: number,
+        public homeOddsHome?: number,
+        public homeLineAway?: number,
+        public homeOddsAway?: number,
         public league?: ILeague
     ) {}
 }

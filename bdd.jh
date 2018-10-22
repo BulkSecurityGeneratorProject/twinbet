@@ -1,0 +1,24 @@
+entity League {
+	nameLeague String
+}
+
+entity GameBetMin {
+	nameHome String
+    nameAway String
+    homeLineHome Double
+    homeOddsHome Double
+    homeLineAway Double
+    homeOddsAway Double
+}
+
+relationship ManyToOne {
+	League{user(login)} to User,
+	GameBetMin{League(nameLeague)} to League
+}
+
+// Set pagination options
+paginate GameBetMin with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+

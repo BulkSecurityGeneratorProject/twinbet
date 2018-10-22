@@ -30,19 +30,19 @@
                 <constraints nullable="true" />
             </column>
 
-            <column name="home_line_home" type="varchar(255)">
+            <column name="home_line_home" type="double">
                 <constraints nullable="true" />
             </column>
 
-            <column name="home_odds_home" type="varchar(255)">
+            <column name="home_odds_home" type="double">
                 <constraints nullable="true" />
             </column>
 
-            <column name="home_line_away" type="varchar(255)">
+            <column name="home_line_away" type="double">
                 <constraints nullable="true" />
             </column>
 
-            <column name="home_odds_away" type="varchar(255)">
+            <column name="home_odds_away" type="double">
                 <constraints nullable="true" />
             </column>
 

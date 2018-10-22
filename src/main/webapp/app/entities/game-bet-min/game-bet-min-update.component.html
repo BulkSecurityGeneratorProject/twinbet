@@ -21,22 +21,22 @@
                 </div>
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="twinbetApp.gameBetMin.homeLineHome" for="field_homeLineHome">Home Line Home</label>
-                    <input type="text" class="form-control" name="homeLineHome" id="field_homeLineHome"
+                    <input type="number" class="form-control" name="homeLineHome" id="field_homeLineHome"
                         [(ngModel)]="gameBetMin.homeLineHome" />
                 </div>
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="twinbetApp.gameBetMin.homeOddsHome" for="field_homeOddsHome">Home Odds Home</label>
-                    <input type="text" class="form-control" name="homeOddsHome" id="field_homeOddsHome"
+                    <input type="number" class="form-control" name="homeOddsHome" id="field_homeOddsHome"
                         [(ngModel)]="gameBetMin.homeOddsHome" />
                 </div>
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="twinbetApp.gameBetMin.homeLineAway" for="field_homeLineAway">Home Line Away</label>
-                    <input type="text" class="form-control" name="homeLineAway" id="field_homeLineAway"
+                    <input type="number" class="form-control" name="homeLineAway" id="field_homeLineAway" placeholder={{-gameBetMin.homeLineHome}} 
                         [(ngModel)]="gameBetMin.homeLineAway" />
                 </div>
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="twinbetApp.gameBetMin.homeOddsAway" for="field_homeOddsAway">Home Odds Away</label>
-                    <input type="text" class="form-control" name="homeOddsAway" id="field_homeOddsAway"
+                    <input type="number" class="form-control" name="homeOddsAway" id="field_homeOddsAway" 
                         [(ngModel)]="gameBetMin.homeOddsAway" />
                 </div>
 

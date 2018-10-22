@@ -11,19 +11,19 @@
         },
         {
             "fieldName": "homeLineHome",
-            "fieldType": "String"
+            "fieldType": "Double"
         },
         {
             "fieldName": "homeOddsHome",
-            "fieldType": "String"
+            "fieldType": "Double"
         },
         {
             "fieldName": "homeLineAway",
-            "fieldType": "String"
+            "fieldType": "Double"
         },
         {
             "fieldName": "homeOddsAway",
-            "fieldType": "String"
+            "fieldType": "Double"
         }
     ],
     "relationships": [
