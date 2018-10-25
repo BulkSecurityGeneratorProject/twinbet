@@ -75,7 +75,7 @@ export class LeagueUpdateComponent implements OnInit {
         this.jhiAlertService.error(errorMessage, null, null);
     }
 
-    trackUserById(index: number, item: IUser) {
+    trackLeagueById(index: number, item: IUser) {
         return item.id;
     }
 }
