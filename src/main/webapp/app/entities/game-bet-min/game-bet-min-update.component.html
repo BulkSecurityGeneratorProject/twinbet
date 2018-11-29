@@ -12,12 +12,12 @@
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="twinbetApp.gameBetMin.nameHome" for="field_nameHome">Name Home</label>
                     <input type="text" class="form-control" name="nameHome" id="field_nameHome"
-                        [(ngModel)]="gameBetMin.nameHome" />
+                        [(ngModel)]="gameBetMin.nameHome" readonly/>
                 </div>
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="twinbetApp.gameBetMin.nameAway" for="field_nameAway">Name Away</label>
                     <input type="text" class="form-control" name="nameAway" id="field_nameAway"
-                        [(ngModel)]="gameBetMin.nameAway" />
+                        [(ngModel)]="gameBetMin.nameAway" readonly/>
                 </div>
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="twinbetApp.gameBetMin.homeLineHome" for="field_homeLineHome">Home Line Home</label>
@@ -31,20 +31,24 @@
                 </div>
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="twinbetApp.gameBetMin.homeLineAway" for="field_homeLineAway">Home Line Away</label>
-                    <input type="number" class="form-control" name="homeLineAway" id="field_homeLineAway" placeholder={{-gameBetMin.homeLineHome}} 
+                    <input type="number" class="form-control" name="homeLineAway" id="field_homeLineAway" placeholder={{-gameBetMin.homeLineHome}}
                         [(ngModel)]="gameBetMin.homeLineAway" />
                 </div>
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="twinbetApp.gameBetMin.homeOddsAway" for="field_homeOddsAway">Home Odds Away</label>
-                    <input type="number" class="form-control" name="homeOddsAway" id="field_homeOddsAway" 
+                    <input type="number" class="form-control" name="homeOddsAway" id="field_homeOddsAway"
                         [(ngModel)]="gameBetMin.homeOddsAway" />
                 </div>
-
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="twinbetApp.gameBetMin.league" for="field_league">League</label>
-                    <select class="form-control" id="field_league" name="league" [(ngModel)]="gameBetMin.league" >
-                        <option [ngValue]="leagueOption.id === gameBetMin.league?.id ? gameBetMin.league : leagueOption" *ngFor="let leagueOption of leagues trackBy: trackLeagueById">{{leagueOption.nameLeague}}</option>
+                    <select class="form-control" id="field_league" name="league" [(ngModel)]="gameBetMin.league " readonly >
+                        <option [ngValue]="leagueOption.id === gameBetMin.league?.id ? gameBetMin.league : leagueOption" *ngFor="let leagueOption of leagues; trackBy: trackLeagueById">{{leagueOption.nameLeague}}</option>
                     </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="twinbetApp.gameBetMin.wantNotif" for="field_wantNotif">Want Notif</label>
+                    <input type="checkbox" class="form-control-wantnotif" name="wantNotif" id="field_wantNotif"
+                        [(ngModel)]="gameBetMin.wantNotif" />
                 </div>
             </div>
             <div>

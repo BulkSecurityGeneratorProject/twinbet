@@ -46,6 +46,14 @@
                 <constraints nullable="true" />
             </column>
 
+            <column name="id_game" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="want_notif" type="bit">
+                <constraints nullable="true" />
+            </column>
+
             <column name="league_id" type="bigint">
                 <constraints nullable="true" />
             </column>

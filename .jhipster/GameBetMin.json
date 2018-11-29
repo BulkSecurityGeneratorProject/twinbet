@@ -1,5 +1,14 @@
 {
-    "name": "GameBetMin",
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "league",
+            "otherEntityName": "league",
+            "otherEntityField": "nameLeague"
+        }
+    ],
     "fields": [
         {
             "fieldName": "nameHome",
@@ -24,23 +33,21 @@
         {
             "fieldName": "homeOddsAway",
             "fieldType": "Double"
-        }
-    ],
-    "relationships": [
+        },
         {
-            "relationshipType": "many-to-one",
-            "relationshipName": "league",
-            "otherEntityName": "league",
-            "otherEntityField": "nameLeague"
+            "fieldName": "idGame",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "wantNotif",
+            "fieldType": "Boolean"
         }
     ],
     "changelogDate": "20181015211837",
-    "entityTableName": "game_bet_min",
     "dto": "no",
-    "pagination": "pagination",
+    "searchEngine": false,
     "service": "no",
+    "entityTableName": "game_bet_min",
     "jpaMetamodelFiltering": false,
-    "fluentMethods": true,
-    "clientRootFolder": "",
-    "applications": "*"
+    "pagination": "pagination"
 }

@@ -41,18 +41,28 @@ describe('GameBetMin e2e test', () => {
         await promise.all([
             gameBetMinUpdatePage.setNameHomeInput('nameHome'),
             gameBetMinUpdatePage.setNameAwayInput('nameAway'),
-            gameBetMinUpdatePage.setHomeLineHomeInput('homeLineHome'),
-            gameBetMinUpdatePage.setHomeOddsHomeInput('homeOddsHome'),
-            gameBetMinUpdatePage.setHomeLineAwayInput('homeLineAway'),
-            gameBetMinUpdatePage.setHomeOddsAwayInput('homeOddsAway'),
+            gameBetMinUpdatePage.setHomeLineHomeInput('5'),
+            gameBetMinUpdatePage.setHomeOddsHomeInput('5'),
+            gameBetMinUpdatePage.setHomeLineAwayInput('5'),
+            gameBetMinUpdatePage.setHomeOddsAwayInput('5'),
+            gameBetMinUpdatePage.setIdGameInput('idGame'),
             gameBetMinUpdatePage.leagueSelectLastOption()
         ]);
         expect(await gameBetMinUpdatePage.getNameHomeInput()).to.eq('nameHome');
         expect(await gameBetMinUpdatePage.getNameAwayInput()).to.eq('nameAway');
-        expect(await gameBetMinUpdatePage.getHomeLineHomeInput()).to.eq('homeLineHome');
-        expect(await gameBetMinUpdatePage.getHomeOddsHomeInput()).to.eq('homeOddsHome');
-        expect(await gameBetMinUpdatePage.getHomeLineAwayInput()).to.eq('homeLineAway');
-        expect(await gameBetMinUpdatePage.getHomeOddsAwayInput()).to.eq('homeOddsAway');
+        expect(await gameBetMinUpdatePage.getHomeLineHomeInput()).to.eq('5');
+        expect(await gameBetMinUpdatePage.getHomeOddsHomeInput()).to.eq('5');
+        expect(await gameBetMinUpdatePage.getHomeLineAwayInput()).to.eq('5');
+        expect(await gameBetMinUpdatePage.getHomeOddsAwayInput()).to.eq('5');
+        expect(await gameBetMinUpdatePage.getIdGameInput()).to.eq('idGame');
+        const selectedWantNotif = gameBetMinUpdatePage.getWantNotifInput();
+        if (await selectedWantNotif.isSelected()) {
+            await gameBetMinUpdatePage.getWantNotifInput().click();
+            expect(await gameBetMinUpdatePage.getWantNotifInput().isSelected()).to.be.false;
+        } else {
+            await gameBetMinUpdatePage.getWantNotifInput().click();
+            expect(await gameBetMinUpdatePage.getWantNotifInput().isSelected()).to.be.true;
+        }
         await gameBetMinUpdatePage.save();
         expect(await gameBetMinUpdatePage.getSaveButton().isPresent()).to.be.false;
 

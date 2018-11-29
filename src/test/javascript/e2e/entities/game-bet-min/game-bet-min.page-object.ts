@@ -32,6 +32,8 @@ export class GameBetMinUpdatePage {
     homeOddsHomeInput = element(by.id('field_homeOddsHome'));
     homeLineAwayInput = element(by.id('field_homeLineAway'));
     homeOddsAwayInput = element(by.id('field_homeOddsAway'));
+    idGameInput = element(by.id('field_idGame'));
+    wantNotifInput = element(by.id('field_wantNotif'));
     leagueSelect = element(by.id('field_league'));
 
     async getPageTitle() {
@@ -84,6 +86,18 @@ export class GameBetMinUpdatePage {
 
     async getHomeOddsAwayInput() {
         return this.homeOddsAwayInput.getAttribute('value');
+    }
+
+    async setIdGameInput(idGame) {
+        await this.idGameInput.sendKeys(idGame);
+    }
+
+    async getIdGameInput() {
+        return this.idGameInput.getAttribute('value');
+    }
+
+    getWantNotifInput() {
+        return this.wantNotifInput;
     }
 
     async leagueSelectLastOption() {

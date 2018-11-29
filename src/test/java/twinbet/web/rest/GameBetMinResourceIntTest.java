@@ -57,6 +57,12 @@ public class GameBetMinResourceIntTest {
     private static final Double DEFAULT_HOME_ODDS_AWAY = 1D;
     private static final Double UPDATED_HOME_ODDS_AWAY = 2D;
 
+    private static final String DEFAULT_ID_GAME = "AAAAAAAAAA";
+    private static final String UPDATED_ID_GAME = "BBBBBBBBBB";
+
+    private static final Boolean DEFAULT_WANT_NOTIF = false;
+    private static final Boolean UPDATED_WANT_NOTIF = true;
+
     @Autowired
     private GameBetMinRepository gameBetMinRepository;
 
@@ -100,7 +106,9 @@ public class GameBetMinResourceIntTest {
             .homeLineHome(DEFAULT_HOME_LINE_HOME)
             .homeOddsHome(DEFAULT_HOME_ODDS_HOME)
             .homeLineAway(DEFAULT_HOME_LINE_AWAY)
-            .homeOddsAway(DEFAULT_HOME_ODDS_AWAY);
+            .homeOddsAway(DEFAULT_HOME_ODDS_AWAY)
+            .idGame(DEFAULT_ID_GAME)
+            .wantNotif(DEFAULT_WANT_NOTIF);
         return gameBetMin;
     }
 
@@ -130,6 +138,8 @@ public class GameBetMinResourceIntTest {
         assertThat(testGameBetMin.getHomeOddsHome()).isEqualTo(DEFAULT_HOME_ODDS_HOME);
         assertThat(testGameBetMin.getHomeLineAway()).isEqualTo(DEFAULT_HOME_LINE_AWAY);
         assertThat(testGameBetMin.getHomeOddsAway()).isEqualTo(DEFAULT_HOME_ODDS_AWAY);
+        assertThat(testGameBetMin.getIdGame()).isEqualTo(DEFAULT_ID_GAME);
+        assertThat(testGameBetMin.isWantNotif()).isEqualTo(DEFAULT_WANT_NOTIF);
     }
 
     @Test
@@ -167,7 +177,9 @@ public class GameBetMinResourceIntTest {
             .andExpect(jsonPath("$.[*].homeLineHome").value(hasItem(DEFAULT_HOME_LINE_HOME.doubleValue())))
             .andExpect(jsonPath("$.[*].homeOddsHome").value(hasItem(DEFAULT_HOME_ODDS_HOME.doubleValue())))
             .andExpect(jsonPath("$.[*].homeLineAway").value(hasItem(DEFAULT_HOME_LINE_AWAY.doubleValue())))
-            .andExpect(jsonPath("$.[*].homeOddsAway").value(hasItem(DEFAULT_HOME_ODDS_AWAY.doubleValue())));
+            .andExpect(jsonPath("$.[*].homeOddsAway").value(hasItem(DEFAULT_HOME_ODDS_AWAY.doubleValue())))
+            .andExpect(jsonPath("$.[*].idGame").value(hasItem(DEFAULT_ID_GAME.toString())))
+            .andExpect(jsonPath("$.[*].wantNotif").value(hasItem(DEFAULT_WANT_NOTIF.booleanValue())));
     }
     
     @Test
@@ -186,7 +198,9 @@ public class GameBetMinResourceIntTest {
             .andExpect(jsonPath("$.homeLineHome").value(DEFAULT_HOME_LINE_HOME.doubleValue()))
             .andExpect(jsonPath("$.homeOddsHome").value(DEFAULT_HOME_ODDS_HOME.doubleValue()))
             .andExpect(jsonPath("$.homeLineAway").value(DEFAULT_HOME_LINE_AWAY.doubleValue()))
-            .andExpect(jsonPath("$.homeOddsAway").value(DEFAULT_HOME_ODDS_AWAY.doubleValue()));
+            .andExpect(jsonPath("$.homeOddsAway").value(DEFAULT_HOME_ODDS_AWAY.doubleValue()))
+            .andExpect(jsonPath("$.idGame").value(DEFAULT_ID_GAME.toString()))
+            .andExpect(jsonPath("$.wantNotif").value(DEFAULT_WANT_NOTIF.booleanValue()));
     }
 
     @Test
@@ -215,7 +229,9 @@ public class GameBetMinResourceIntTest {
             .homeLineHome(UPDATED_HOME_LINE_HOME)
             .homeOddsHome(UPDATED_HOME_ODDS_HOME)
             .homeLineAway(UPDATED_HOME_LINE_AWAY)
-            .homeOddsAway(UPDATED_HOME_ODDS_AWAY);
+            .homeOddsAway(UPDATED_HOME_ODDS_AWAY)
+            .idGame(UPDATED_ID_GAME)
+            .wantNotif(UPDATED_WANT_NOTIF);
 
         restGameBetMinMockMvc.perform(put("/api/game-bet-mins")
             .contentType(TestUtil.APPLICATION_JSON_UTF8)
@@ -232,6 +248,8 @@ public class GameBetMinResourceIntTest {
         assertThat(testGameBetMin.getHomeOddsHome()).isEqualTo(UPDATED_HOME_ODDS_HOME);
         assertThat(testGameBetMin.getHomeLineAway()).isEqualTo(UPDATED_HOME_LINE_AWAY);
         assertThat(testGameBetMin.getHomeOddsAway()).isEqualTo(UPDATED_HOME_ODDS_AWAY);
+        assertThat(testGameBetMin.getIdGame()).isEqualTo(UPDATED_ID_GAME);
+        assertThat(testGameBetMin.isWantNotif()).isEqualTo(UPDATED_WANT_NOTIF);
     }
 
     @Test

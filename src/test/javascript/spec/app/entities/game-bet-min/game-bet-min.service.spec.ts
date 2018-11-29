@@ -21,7 +21,7 @@ describe('Service Tests', () => {
             service = injector.get(GameBetMinService);
             httpMock = injector.get(HttpTestingController);
 
-            elemDefault = null;
+            elemDefault = new GameBetMin(0, 'AAAAAAA', 'AAAAAAA', 0, 0, 0, 0, 'AAAAAAA', false);
         });
 
         describe('Service methods', async () => {
@@ -57,10 +57,12 @@ describe('Service Tests', () => {
                     {
                         nameHome: 'BBBBBB',
                         nameAway: 'BBBBBB',
-                        homeLineHome: 'BBBBBB',
-                        homeOddsHome: 'BBBBBB',
-                        homeLineAway: 'BBBBBB',
-                        homeOddsAway: 'BBBBBB'
+                        homeLineHome: 1,
+                        homeOddsHome: 1,
+                        homeLineAway: 1,
+                        homeOddsAway: 1,
+                        idGame: 'BBBBBB',
+                        wantNotif: true
                     },
                     elemDefault
                 );
@@ -79,10 +81,12 @@ describe('Service Tests', () => {
                     {
                         nameHome: 'BBBBBB',
                         nameAway: 'BBBBBB',
-                        homeLineHome: 'BBBBBB',
-                        homeOddsHome: 'BBBBBB',
-                        homeLineAway: 'BBBBBB',
-                        homeOddsAway: 'BBBBBB'
+                        homeLineHome: 1,
+                        homeOddsHome: 1,
+                        homeLineAway: 1,
+                        homeOddsAway: 1,
+                        idGame: 'BBBBBB',
+                        wantNotif: true
                     },
                     elemDefault
                 );

@@ -1,12 +1,12 @@
 <div>
     <h2 id="page-heading">
         <span jhiTranslate="twinbetApp.gameBetMin.home.title">Game Bet Mins</span>
-        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-game-bet-min" [routerLink]="['/game-bet-min/new']">
+        <!-- <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-game-bet-min" [routerLink]="['/game-bet-min/new']">
             <fa-icon [icon]="'plus'"></fa-icon>
             <span  jhiTranslate="twinbetApp.gameBetMin.home.createLabel">
             Create new Game Bet Min
             </span>
-        </button>
+        </button> -->
     </h2>
     <jhi-alert></jhi-alert>
     <br/>
@@ -21,6 +21,7 @@
             <th jhiSortBy="homeOddsHome"><span jhiTranslate="twinbetApp.gameBetMin.homeOddsHome">Home Odds Home</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="homeLineAway"><span jhiTranslate="twinbetApp.gameBetMin.homeLineAway">Home Line Away</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="homeOddsAway"><span jhiTranslate="twinbetApp.gameBetMin.homeOddsAway">Home Odds Away</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="wantNotif"><span jhiTranslate="twinbetApp.gameBetMin.wantNotif">Want Notif</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="league.nameLeague"><span jhiTranslate="twinbetApp.gameBetMin.league">League</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th></th>
             </tr>
@@ -34,6 +35,7 @@
                 <td>{{gameBetMin.homeOddsHome}}</td>
                 <td>{{gameBetMin.homeLineAway}}</td>
                 <td>{{gameBetMin.homeOddsAway}}</td>
+                <td>{{gameBetMin.wantNotif}}</td>
                 <td>
                     <div *ngIf="gameBetMin.league">
                         <a [routerLink]="['../league', gameBetMin.league?.id, 'view' ]" >{{gameBetMin.league?.nameLeague}}</a>
@@ -52,14 +54,6 @@
                                 class="btn btn-primary btn-sm">
                             <fa-icon [icon]="'pencil-alt'"></fa-icon>
                             <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
-                        </button>
-                        <button type="submit"
-                                [routerLink]="['/', { outlets: { popup: 'game-bet-min/'+ gameBetMin.id + '/delete'} }]"
-                                replaceUrl="true"
-                                queryParamsHandling="merge"
-                                class="btn btn-danger btn-sm">
-                            <fa-icon [icon]="'times'"></fa-icon>
-                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
                         </button>
                     </div>
                 </td>

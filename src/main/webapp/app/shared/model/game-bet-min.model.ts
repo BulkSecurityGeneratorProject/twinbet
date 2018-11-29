@@ -8,6 +8,8 @@ export interface IGameBetMin {
     homeOddsHome?: number;
     homeLineAway?: number;
     homeOddsAway?: number;
+    idGame?: string;
+    wantNotif?: boolean;
     league?: ILeague;
 }
 
@@ -20,6 +22,10 @@ export class GameBetMin implements IGameBetMin {
         public homeOddsHome?: number,
         public homeLineAway?: number,
         public homeOddsAway?: number,
+        public idGame?: string,
+        public wantNotif?: boolean,
         public league?: ILeague
-    ) {}
+    ) {
+        this.wantNotif = this.wantNotif || false;
+    }
 }

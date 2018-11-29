@@ -41,6 +41,12 @@ public class GameBetMin implements Serializable {
     @Column(name = "home_odds_away")
     private Double homeOddsAway;
 
+    @Column(name = "id_game")
+    private String idGame;
+
+    @Column(name = "want_notif")
+    private Boolean wantNotif;
+
     @ManyToOne
     @JsonIgnoreProperties("")
     private League league;
@@ -132,6 +138,32 @@ public class GameBetMin implements Serializable {
         this.homeOddsAway = homeOddsAway;
     }
 
+    public String getIdGame() {
+        return idGame;
+    }
+
+    public GameBetMin idGame(String idGame) {
+        this.idGame = idGame;
+        return this;
+    }
+
+    public void setIdGame(String idGame) {
+        this.idGame = idGame;
+    }
+
+    public Boolean isWantNotif() {
+        return wantNotif;
+    }
+
+    public GameBetMin wantNotif(Boolean wantNotif) {
+        this.wantNotif = wantNotif;
+        return this;
+    }
+
+    public void setWantNotif(Boolean wantNotif) {
+        this.wantNotif = wantNotif;
+    }
+
     public League getLeague() {
         return league;
     }
@@ -176,6 +208,8 @@ public class GameBetMin implements Serializable {
             ", homeOddsHome=" + getHomeOddsHome() +
             ", homeLineAway=" + getHomeLineAway() +
             ", homeOddsAway=" + getHomeOddsAway() +
+            ", idGame='" + getIdGame() + "'" +
+            ", wantNotif='" + isWantNotif() + "'" +
             "}";
     }
 }

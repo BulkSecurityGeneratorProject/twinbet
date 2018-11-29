@@ -22,6 +22,8 @@
             "homeOddsHome": "Home Odds Home",
             "homeLineAway": "Home Line Away",
             "homeOddsAway": "Home Odds Away",
+            "idGame": "Id Game",
+            "wantNotif": "Want Notif",
             "league": "League"
         }
     }
